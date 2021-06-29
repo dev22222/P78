@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Family Members</title>;
+</head>
+
+<body style="text-align: center;">
+    <h1>My Family Members</h1>
+    <br>
+    <h2 id="text" style="margin-bottom: 50px;margin-top:100px;vertical-align: middle;"></h2>
+    <br><br>
+    <h2 id="name"></h2>
+    <br>
+    <button onclick="change()">Next</button>;
+</body>
+<script>
+    var Members = ["Dev Tulsiyan(Me)", "Priyanka Tulsiyan(My Elder Sister)", "Manoj Tulsiyan(My Father)",
+        "Rinku Tulsiyan(My Mother)", "Riya Tulsiyan(My Elder Sister)", "Priya Tulsiyan(My Elder Sister)",
+        "Avni Tulsiyan(My Sister)", "Antra Murarka(My Sister)", "Mukesh Tulsiyan(My Uncle)",
+        "Pintu Tulsiyan(My Uncle)", "Usha Tulsiyan(My Aunty)", "Ritu Tulsiyan(My Aunty)", "Mamta Murarka(My Aunty)",
+        "Saket Murarka(My Uncle)", "Disha Murarka(My Elder Sister)", "Coco(Our Dog)"
+    ];
+    var text = ["Mam,", "I", "Dont", "Have", "Photos", "Of", "My", "Family", "Members.", "That's", "Why", "I", "Am",
+        "Using", "Text", "Here"
+    ];
+    var i = 0;
+
+    function change() {
+        document.getElementById("text").innerHTML = text[i];
+        document.getElementById("name").innerHTML = Members[i];
+        
+        i++;
+        if (i==16) {
+            i=0;
+        }
+    }
+</script>
+
+</html>
